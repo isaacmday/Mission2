@@ -24,7 +24,7 @@ namespace Mission2
                 die1 = random.Next(1, 7);
                 die2 = random.Next(1, 7);
                 total = die1 + die2;
-                //put total value in the array
+                //add count to the proper value
                 numTotals[total - 2]++;
             }
             return numTotals;
