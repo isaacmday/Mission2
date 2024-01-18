@@ -10,7 +10,7 @@ internal class Program
         GetRolls roll = new GetRolls();
         
         //output greeting
-        Console.WriteLine("Welcome to the dice roll simulator." + "\n");
+        Console.WriteLine("Welcome to my dice roll simulator." + "\n");
         Console.WriteLine("How many rolls would you like to simulate?");
         
         //get the number of rolls
