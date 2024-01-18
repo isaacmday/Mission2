@@ -1,4 +1,5 @@
 ﻿using System.Globalization;
+using Mission2;
 
 internal class Program
 {
@@ -38,30 +39,5 @@ internal class Program
         }
         //ending message
         Console.WriteLine("\n" + "\n" + "Total number of rolls = " + numRolls + "." + "\n" + "Thanks for using my simulator. See ya!");
-    }
-}
-
-internal class GetRolls
-{
-    public int[] RollDice(int numRolls)
-    {
-        //initialize variables and array
-        int die1 = 0;
-        int die2 = 0;
-        int total = 0;
-        int[] numTotals = new int[11];
-        Random random = new Random();
-
-        //loop thru the array
-        for (int i = 0; i < numRolls; i++)
-        {
-            //generate random numbers
-            die1 = random.Next(1, 7);
-            die2 = random.Next(1, 7);
-            total = die1 + die2;
-            //put total value in the array
-            numTotals[total-2]++;
-        }
-        return numTotals;
     }
 }
